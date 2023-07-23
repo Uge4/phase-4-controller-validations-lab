@@ -1,5 +1,5 @@
 class Post < ApplicationRecord
-    belongs_to :authors
+    belongs_to :author
     validates :title, presence: true
     validates :category, inclusion: { in: %w(Fiction Non-Fiction) }
     validates :content, length: { minimum: 100}
